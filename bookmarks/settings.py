@@ -25,19 +25,19 @@ SECRET_KEY = '#%t5&&be&izoi5(l3n@#(45i0#xzdcw-mx(d995^*6n5y03j-4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com','localhost','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +123,10 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bravolulu07@gmail.com'
+EMAIL_HOST_PASSWORD = '@12345@Bangladesh#'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
