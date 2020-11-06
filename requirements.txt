@@ -14,6 +14,7 @@ gunicorn==20.0.4
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 jmespath==0.10.0
 Markdown==3.2.1
+numpy==1.19.4
 oauthlib==3.1.0
 olefile==0.46
 Pillow @ file:///C:/ci/pillow_1603823068645/work
