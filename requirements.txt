@@ -5,7 +5,6 @@ brotlipy==0.7.0
 certifi==2020.6.20
 chardet==3.0.4
 defusedxml==0.7.0rc1
-Django @ file:///tmp/build/80754af9/django_1601563330930/work
 django-storages==1.10.1
 django-taggit==1.2.0
 gunicorn==20.0.4
