@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '#%t5&&be&izoi5(l3n@#(45i0#xzdcw-mx(d995^*6n5y03j-4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['mysite.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['songsoptok.herokuapp.com','127.0.0.1']
 
 
 # Application definition
