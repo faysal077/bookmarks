@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'social_django',
     'werkzeug_debugger_runserver',
     'django_extensions',
+    'easy_thumbnails',
 
 ]
 
