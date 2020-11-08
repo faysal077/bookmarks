@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['songsoptok.herokuapp.com', '127.0.0.1']
 #
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
+    'images.apps.ImagesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'social_django',
+    'werkzeug_debugger_runserver',
+    'django_extensions',
+
 ]
 
 MIDDLEWARE = [
@@ -140,7 +144,17 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
 ]
 SOCIAL_AUTH_FACEBOOK_KEY = '2704988376482296'
 SOCIAL_AUTH_FACEBOOK_SECRET = 'c74d1f42880bf00f2ecbc2b657365565'
 
+CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True
+
+CSRF_COOKIE_HTTPONLY = True
+
+SESSION_COOKIE_HTTPONLY = True
+
+SECURE_SSL_REDIRECT = True
